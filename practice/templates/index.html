@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boluwatife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+
+<body class="container">
+    <!-- NAVBAR -->
+
+
+    <nav class="navbar navbar-expand-lg bg-light-subtle border border-secondary mt-5 p-2 rounded rounded-25 text-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-user text-dark"></i>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 ms-lg-5" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" aria-current="page" href="{% url 'home'%}">Home</a>
+                    </li>
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="#">About</a>
+                    </li>
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="{% url 'project'%}">Projects</a>
+                    </li>
+                    <li class="nav-item ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO PAGE -->
+    <div class="container border boder-dark mt-5 rounded rounded-2 d-flex h-100 align-items-center justify-content-center bg-light-subtle p-3" style="aspect-ratio: 5/3;">
+        <div>
+            <div>
+                <h1 class="text-center">Boluwatife Akingabde Ilerioluwa</h1>
+                <p class="fs-3 text-center">A fullstack web developer</p>
+            </div>
+            <div class="text-center">
+                <p>🤌🤌🤌"Code is like humor. When you have to explain it, it’s bad."🤌🤌🤌</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ -->
+
+    <div class="container border border-secondary mt-5 rounded rounded-2 mb-5 p-2" style="min-height: 100px;">
+        <h6>Frequently Asked Questions (FAQ)</h6>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item rounded rounded-2 mt-3">
+                <h2 class="accordion-header rounded rounded-2">
+                    <button class="accordion-button fs-7 rounded  border border-secondary rounded-2 shadow-none collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        What is Django and why should I use it?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-7">
+                        Django is a high-level web framework written in Python that encourages rapid development and clean, pragmatic design. It
+                        was created to help developers take applications from concept to completion as swiftly as possible. One of the main
+                        reasons to use Django is its "batteries-included" philosophy, which means it comes with a lot of built-in features like
+                        an admin panel, authentication, ORM (Object-Relational Mapping), and much more. This can significantly reduce the amount
+                        of time and effort needed to build complex web applications. Additionally, Django promotes the DRY (Don't Repeat
+                        Yourself) principle, which helps in maintaining clean and reusable code. It also has a strong emphasis on security,
+                        helping developers avoid common security issues such as SQL injection, cross-site scripting, and cross-site request
+                        forgery.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded rounded-2 mt-3 shadow-none">
+                <h2 class="accordion-header rounded rounded-2">
+                    <button class="accordion-button fs-7 rounded rounded-2 border border-secondary collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        How do I install Django?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-7">
+                        Installing Django is a straightforward process that involves using Python's package manager, pip. Pip is included with
+                        Python 3.4 and later versions, making it easy to install Django along with other Python packages. You simply need to
+                        open your terminal or command prompt and run the installation command. This command downloads the latest version of
+                        Django from the Python Package Index (PyPI) and installs it in your environment. Once installed, you can verify the
+                        installation by checking the Django version, ensuring that everything is set up correctly for starting a new project.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded rounded-2 mt-3">
+                <h2 class="accordion-header rounded rounded-2">
+                    <button class="accordion-button fs-7 rounded rounded-2  border border-secondary collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        How do I create a new Django project?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-7">
+                        Creating a new Django project is the first step in building a web application with Django. Using the <code>django-admin</code>
+                        command-line utility, you can generate a new project structure that includes all the necessary configurations and
+                        settings. This project structure typically includes a settings file, URL configuration, WSGI application, and manage.py
+                        script for managing your project. Once you have your project set up, you can start creating individual applications
+                        within the project. These applications can be developed and maintained separately, allowing for a modular approach to
+                        building your web application. Each app can handle a specific functionality, such as user authentication, blog
+                        management, or e-commerce features.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded rounded-2 mt-3">
+                <h2 class="accordion-header rounded rounded-2">
+                    <button class="accordion-button fs-7 rounded  border border-secondary rounded-2 collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        What are Django apps and how do they differ from projects?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-7">
+                        In Django, a project is a collection of settings and configurations for a single web application instance, while an app
+                        is a self-contained module that provides specific functionality. Think of a project as the overall container that houses
+                        your entire web application, and apps as individual components within that container. For instance, you might have a
+                        project that contains multiple apps like a blog, a forum, and an e-commerce store. Each app can be developed, tested,
+                        and deployed independently, which promotes code reusability and modularity. Creating a new app within your project
+                        involves using the <code>startapp</code> command, which generates a directory structure with all the necessary files for that app.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="{% url 'project'%}" class="nav-link px-2 text-muted">Project</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</html>
