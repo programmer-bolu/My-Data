@@ -14,9 +14,9 @@
     <!-- NAVBAR -->
 
 
-    <nav class="navbar navbar-expand-lg bg-light-subtle border border-secondary mt-5 p-2 rounded rounded-25 text-success">
+    <nav class="navbar navbar-expand-lg bg-light-subtle border mt-5 p-2 rounded rounded-25 text-success">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <i class="fa-solid fa-user text-dark"></i>
             </a>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -29,7 +29,7 @@
                         <a class="nav-link fw-semibold" aria-current="page" href="{% url 'home'%}">Home</a>
                     </li>
                     <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
-                        <a class="nav-link fw-semibold" href="#">About</a>
+                        <a class="nav-link fw-semibold" href="{% url 'about'%}">About</a>
                     </li>
                     <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
                         <a class="nav-link fw-semibold" href="{% url 'project'%}">Projects</a>
@@ -149,7 +149,7 @@
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="{% url 'about'%}" class="nav-link px-2 text-muted">About</a></li>
                 <li class="nav-item"><a href="{% url 'project'%}" class="nav-link px-2 text-muted">Project</a></li>
                 <li class="nav-item"><a href="{% url 'contact'%}" class="nav-link px-2 text-muted">Contact</a></li>
             </ul>

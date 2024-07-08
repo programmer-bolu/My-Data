@@ -1,16 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boluwatife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 </head>
-<body>
-    <h1>My About Page</h1>
-    <div>
-        <a href="{% url 'home'%}">
-            <button>Back To Home</button>
-        </a>
+
+<body class="container">
+    <!-- NAVBAR -->
+
+
+    <nav
+        class="navbar navbar-expand-lg bg-light-subtle border mt-5 p-2 rounded rounded-25 text-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home'%}">
+                <i class="fa-solid fa-user text-dark"></i>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 ms-lg-5" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" aria-current="page" href="{% url 'home'%}">Home</a>
+                    </li>
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="{% url 'about'%}">About</a>
+                    </li>
+                    <li class="nav-item border-bottom ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="{% url 'project'%}">Projects</a>
+                    </li>
+                    <li class="nav-item ps-1 ps-lg-0 ms-lg-3">
+                        <a class="nav-link fw-semibold" href="{% url 'contact'%}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container d-lg-flex mt-4">
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Introduction</h2>
+            <p class="lead fs-6">Hello, my name is Akingbade Boluwatife, and I am an enthusiastic learner currently
+                delving into the world of Django. My
+                journey into web development has been a thrilling adventure, filled with numerous opportunities to learn
+                and grow. Each
+                day brings new challenges and exciting discoveries, fueling my passion for coding.</p>
+        </div>
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Interest in Django</h2>
+            <p class="lead fs-6">My interest in Django stems from its robust capabilities and the seamless experience it
+                offers in building web
+                applications. As I dive deeper into this framework, I am continually amazed by its versatility and the
+                powerful tools it
+                provides to developers. This has solidified my decision to specialize in Django development.</p>
+        </div>
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Transformative Experience</h2>
+            <p class="lead fs-6">Learning Django has been a transformative experience for me. It has not only expanded
+                my technical skills but also
+                enhanced my problem-solving abilities. I enjoy the logical approach required to create functional and
+                efficient web
+                applications, and Django's comprehensive documentation has been a great help in this process.</p>
+        </div>
+    </div>
+
+
+    <div class="container d-lg-flex mt-4 w-lg-75">
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Emphasis on Reusability</h2>
+            <p class="lead fs-6">One of the aspects I appreciate most about Django is its emphasis on reusability and the "don't repeat yourself" (DRY)
+            principle. This philosophy resonates with me as I strive to write clean, efficient, and maintainable code. The
+            structured nature of Django projects also aligns well with my preference for organized and systematic work.</p>
+        </div>
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Community Involvement
+</h2>
+            <p class="lead fs-6">Being a part of the Django community has been incredibly rewarding. The supportive and collaborative environment has
+            provided me with numerous resources and insights. Engaging with fellow learners and experienced developers has enriched
+            my learning experience and motivated me to keep pushing my boundaries.</p>
+        </div>
+    </div>
+
+    <div class="container d-lg-flex mt-4">
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Practical Application</h2>
+            <p class="lead fs-6">As I continue to learn and grow in Django, I am eager to apply my knowledge to real-world projects. I believe that
+            practical experience is invaluable, and I am constantly looking for opportunities to work on meaningful projects that
+            challenge my skills and expand my understanding of web development.</p>
+        </div>
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Continuous Learning</h2>
+            <p class="lead fs-6">In my quest to master Django, I am committed to continuous learning. I regularly explore new features, best practices,
+            and emerging trends in the Django ecosystem. Staying updated with the latest advancements not only enhances my skills
+            but also ensures that I can deliver cutting-edge solutions in my projects.</p>
+        </div>
+        <div class="rounded rounded-3 border px-3 py-2 m-1 bg-light-subtle">
+            <h2 class="h4 text-center text-md-start">Future Aspirations</h2>
+            <p class="lead fs-6">In conclusion, my journey with Django is just beginning, and I am excited about the endless possibilities that lie
+            ahead. I am dedicated to mastering this powerful framework and contributing to innovative projects. Thank you for taking
+            the time to learn about my passion for Django and my commitment to becoming a skilled web developer.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="{% url 'about'%}" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="{% url 'project'%}" class="nav-link px-2 text-muted">Project</a></li>
+                <li class="nav-item"><a href="{% url 'contact'%}" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2024 Company, Inc</p>
+        </footer>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
 </html>
