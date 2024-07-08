@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('about/', views.about, name='about'),
     path('project/', TemplateView.as_view(template_name='pages/project.html'), name='project'),
+    path('contact/', TemplateView.as_view(template_name='pages/contact.html'), name='contact'),
 ]
